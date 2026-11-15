@@ -30,8 +30,7 @@ Complex Complex::operator+(const Complex& other) const {
 
 // TODO(5): 复数相减
 Complex Complex::operator-(const Complex& other) const {
-    (void)other;
-    return Complex();  // 占位，实现后删掉
+    return Complex(real - other.real,imag - other.imag); 
 }
 
 // TODO(6): 按约定格式打印
