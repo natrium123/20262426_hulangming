@@ -35,7 +35,11 @@ Complex Complex::operator-(const Complex& other) const {
 
 // TODO(6): 按约定格式打印
 void Complex::print() const {
-    cout << "TODO" << endl;
+    if (imag >= 0){
+        cout << real << "+" << imag << "i" << endl;
+   } else {
+        cout << real << "-" << -imag << "i" << endl;
+   }
 }
 
 // TODO(7)
